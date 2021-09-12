@@ -7,8 +7,8 @@ function carousel() {
   $.js('timeline-carousel').slick({
     infinite: true,
     arrows: true,
-    prevArrow: '<div class="slick-prev"> <div class="btn d-flex justify-content-center align-items-center"> <img src="../images/left.png"/></div></div>',
-    nextArrow: '<div class="slick-next"> <div class="btn d-flex justify-content-center align-items-center"> <img src="../images/next.png"/> </div></div>',
+    prevArrow: '<div class="slick-prev"> <div class="btn d-flex justify-content-center align-items-center"> <img src="images/left.png"/></div></div>',
+    nextArrow: '<div class="slick-next"> <div class="btn d-flex justify-content-center align-items-center"> <img src="images/next.png"/> </div></div>',
     dots: false,
     autoplay: false,
     speed: 1100,
