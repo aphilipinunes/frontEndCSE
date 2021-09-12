@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+* {
+  outline: none;
+}
+
+.timeline-carousel {
+  margin: 0;
+  font-weight: 400;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-carousel .slick-list {
+  overflow: visible;
+  margin: 0 40px;
+}
+
+.timeline-carousel:after,
+.timeline-carousel:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 54px;
+  height: 90%;
+  top: 0;
+  z-index: 999;
+}
+
+.timeline-carousel:after {
+  left: -5px;
+  background-color: #918fb3;
+}
+
+.timeline-carousel:before {
+  right: -5px;
+  background: linear-gradient(to left, #918fb3 0%, transparent 100%);
+}
+
+.timeline-carousel h1 {
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+}
+.timeline-carousel p {
+  color: white;
+  font-weight: 300;
+}
+.timeline-carousel__image {
+  padding-right: 30px;
+}
+.timeline-carousel__item {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  border: solid 2px white;
+  padding: 0 0 30px 0;
+  height: 220px;
+}
+
+.timeline-carousel__header {
+  border-bottom: solid 2px white;
+  color: white;
+  font-size: 21px;
+}
+
+.timeline-carousel__header .number {
+  width: 50px;
+  border-right: solid 2px white;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+}
+
+.timeline-carousel__header .number + div {
+  padding: 10px 15px 10px 15px;
+}
+
+.timeline-carousel__header + div {
+  padding: 25px;
+  font-size: 18px;
+}
+
+.timeline-carousel__item .media-wrapper {
+  opacity: 0.4;
+  padding-bottom: 71.4%;
+  -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.slick-initialized .slick-slide {
+  padding: 15px !important;
+  width: 406px;
+}
+
+@media (max-width: 890px) {
+  .slick-initialized .slick-slide {
+    width: 360px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  top: 82px !important;
+}
+
+.slick-prev {
+  left: -28px;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
+.slick-arrow {
+  background-color: #6f6e8a;
+}
+
+.slick-prev .btn,
+.slick-next .btn {
+  padding: 20px 5px;
+}
+
+.timeline-carousel .slick-active .media-wrapper {
+  opacity: 1 !important;
+}
+
+.slick-prev .btn,
+.slick-next .btn {
+  border-radius: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  border-radius: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 30px;
+}
